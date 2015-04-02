@@ -12,7 +12,7 @@
 
 */
 
-var cq = require('./canvasquery.js');
+var cq = require('canvasquery');
 
 function playground(args) {
   return new Playground(args);
