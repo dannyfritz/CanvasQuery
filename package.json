@@ -11,8 +11,8 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run build-canvasquery && npm run build-playground",
-    "build-canvasquery": "browserify ./src/canvasquery.js --debug --standalone canvasquery | exorcist --root ./src ./dist/canvasquery.js.map > ./dist/canvasquery.js",
-    "build-playground": "browserify ./src/playground.js --debug --external canvasquery --standalone playground | exorcist --root ./src ./dist/playground.js.map > ./dist/playground.js"
+    "build-canvasquery": "browserify ./src/canvasquery.js --debug -t uglifyify --standalone canvasquery | exorcist --root ./src ./dist/canvasquery.js.map > ./dist/canvasquery.js",
+    "build-playground": "browserify ./src/playground.js --debug -t uglifyify --external canvasquery --standalone playground | exorcist --root ./src ./dist/playground.js.map > ./dist/playground.js"
   },
   "homepage": "http://canvasquery.com/",
   "repository": {
@@ -25,7 +25,8 @@
   "license": "MIT",
   "devDependencies": {
     "browserify": "^9.0.4",
-    "exorcist": "^0.1.6"
+    "exorcist": "^0.1.6",
+    "uglifyify": "^3.0.1"
   },
   "dependencies": {
     "fast-apply": "0.0.3"
