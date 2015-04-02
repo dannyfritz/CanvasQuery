@@ -1,4 +1,4 @@
-/*     
+/*
 
   Playground 1.56
 
@@ -11,6 +11,8 @@
   + sound alias
 
 */
+
+var cq = require('./canvasquery.js');
 
 function playground(args) {
   return new Playground(args);
@@ -2098,12 +2100,12 @@ playground.extend(Playground.SoundFallback.prototype, Playground.SoundInterface)
 
 /* easing */
 
-/*     
+/*
 
   Ease 1.0
-  
+
   http://canvasquery.com
-  
+
   (c) 2015 by Rezoner - http://rezoner.net
 
   `ease` may be freely distributed under the MIT license.
@@ -2333,8 +2335,8 @@ playground.extend(Playground.SoundFallback.prototype, Playground.SoundInterface)
 
     },
 
-    /* 
-      
+    /*
+
       Cubic-spline interpolation by Ivan Kuckir
 
       http://blog.ivank.net/interpolation-with-cubic-splines.html
@@ -2820,3 +2822,5 @@ playground.TweenManager.prototype = {
   }
 
 };
+
+module.exports = playground;

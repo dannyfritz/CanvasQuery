@@ -2,7 +2,12 @@
   "name": "CanvasQuery",
   "version": "1.0.0",
   "description": "Canvas Query is a wrapper library for HTML5 Canvas element which allows it to be used with jQuery like syntax.",
-  "keywords": [ "html5", "client-side", "canvas", "development" ],
+  "keywords": [
+    "html5",
+    "client-side",
+    "canvas",
+    "development"
+  ],
   "main": "canvasquery.js",
   "homepage": "http://canvasquery.com/",
   "repository": {
@@ -10,7 +15,13 @@
     "url": "git://github.com/rezoner/CanvasQuery.git"
   },
   "bugs": {
-    "url" : "https://github.com/rezoner/CanvasQuery/issues"
+    "url": "https://github.com/rezoner/CanvasQuery/issues"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^9.0.4"
+  },
+  "dependencies": {
+    "fast-apply": "0.0.3"
+  }
 }
